@@ -1,0 +1,27 @@
+<!dcontexttype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script> -->
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="holder">
+	    <canvas id="canvas" width="600" height="600"> Your Browser Dosen't Support Canvas!</canvas>
+	</div>
+	<div class="menu">
+	    <!-- <input type="button" value="开始"> -->
+		<!-- <input type="button" value="悔棋"> -->
+		<input type="button" value="重来" onclick="InitGame(context)">
+	</div>
+	<script type="text/javascript">
+	    var canvas = $('canvas');
+		var context=$('canvas').getContext('2d');
+		InitGame(context);
+		
+		
+	</script>
+</body>
+</html>
